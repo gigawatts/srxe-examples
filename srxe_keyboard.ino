@@ -13,8 +13,8 @@ void setup() {
   Serial.begin(9600);
   SRXEInit(0xe7, 0xd6, 0xa2); // initialize display // CS, D/C, RESET
   SRXEWriteString(0, 2, "Key pressed", FONT_LARGE, 3, 0);
-  SRXEWriteString(0, 32, "ASCII:  ", FONT_LARGE, 3, 0);
-  SRXEWriteString(0, 62, "Integer:", FONT_LARGE, 3, 0);
+  SRXEWriteString(0, 32, "ASCII:", FONT_LARGE, 3, 0);
+  SRXEWriteString(0, 62, "Dec:", FONT_LARGE, 3, 0);
   SRXEWriteString(0, 92, "Hex:  0x", FONT_LARGE, 3, 0);
 }
 
